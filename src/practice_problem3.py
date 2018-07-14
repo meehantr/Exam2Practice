@@ -171,7 +171,9 @@ def practice_problem3a(circles):
         for i in range(len(circles)):
             circle = circles[i]
             center = circle.center
-            
+            total = total * center.x
+
+    return total
 
 
 def run_test_practice_problem3b():
