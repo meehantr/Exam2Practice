@@ -2,8 +2,8 @@
 PRACTICE Test 2, practice_problem 3.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Thomas Meehan.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -64,7 +64,7 @@ def is_prime(n):
     return True
     # ------------------------------------------------------------------
     # Students:
-    #   Do NOT touch the above  is_prime  function - it has no TODO.
+    #   Do NOT touch the above  is_prime  function - it has no TDO.
     #   Do NOT copy code from this function.
     #
     # Instead, ** CALL ** this function as needed in the problems below.
@@ -163,6 +163,14 @@ def practice_problem3a(circles):
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
     ####################################################################
+
+    if len(circles) == 0:
+        return 1
+    else:
+        total = 1
+        for i in range(len(circles)):
+            circle = circles[i]
+            
 
 
 def run_test_practice_problem3b():
@@ -444,7 +452,6 @@ def practice_problem3d(sequence):
     #    TIME ESTIMATE:   8 minutes for each part of this problem.
     ####################################################################
 
-
     ####################################################################
     # TODO: 6. Just ABOVE this TODO, you should have implemented
     #     a solution for the   practice_problem3d   function.
@@ -483,7 +490,8 @@ def run_test_practice_problem3e():
              st.SimpleTestCase(practice_problem3e,
                                [(8888888888, -9999999999)], 8888888888),
              st.SimpleTestCase(practice_problem3e,
-                               [(-77, 20000, -33, 40000, -55, 60000, -11)], -176),
+                               [(-77, 20000, -33, 40000, -55, 60000, -11)],
+                               -176),
              st.SimpleTestCase(practice_problem3e,
                                [()], 0),
              st.SimpleTestCase(practice_problem3e,
